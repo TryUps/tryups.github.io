@@ -1,5 +1,5 @@
 /**
- * Fresh 1.2.0 
+ * Fresh 1.2.1
  */
 const fresh = new Fresh({
     "el":".freshload",
