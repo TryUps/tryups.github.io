@@ -8,6 +8,7 @@ const fresh = function({el, settings}){
     this.el = document.querySelector(el);
     this.settings = settings | {"module":false,"folder":"/pages/"};
 }
+
 fresh.prototype.load = function(url){
     if(Array.isArray(url) == true){
         const request = async() => {
@@ -29,8 +30,7 @@ fresh.prototype.load = function(url){
     }
 }
 
-fresh.prototype.go = function(to){
-    var to = to || "blank";
+fresh.prototype.go = function(){
     let url = location.hash.slice(3);
     if(url == ""){
         location.hash =  this.settings.home || "#!/home";
