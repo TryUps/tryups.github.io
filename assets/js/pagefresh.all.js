@@ -55,11 +55,11 @@ fresh.prototype.setTitle = function(){
     },100);
 }
 
+window.fresh = fresh;
+module.exports = fresh;
+
 window.addEventListener('hashchange', function() {
     fresh.go();
 }, false);
 
 window.onhashchange = fresh.go();
-
-window.fresh = fresh;
-module.exports = fresh;
