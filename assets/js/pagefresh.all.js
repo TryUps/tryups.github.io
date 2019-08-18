@@ -5,7 +5,7 @@
  */
 (function(){
     const fresh = function({el, settings}){
-        let el = el || "body";
+        var el = el || "body";
         this.el = document.querySelector(el);
         this.settings = settings | {"module":false,"folder":"/pages/"};
     }
