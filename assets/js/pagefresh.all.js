@@ -33,7 +33,7 @@
     }
 
     fresh.prototype.go = function(to){
-        let to = to || "blank";
+        var to = to || "blank";
         let url = location.hash.slice(3);
         if(url == ""){
             location.hash =  this.settings.home || "#!/home";
